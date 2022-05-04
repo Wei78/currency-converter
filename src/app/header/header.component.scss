@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+
+    h2 {
+        margin: 20px
+    }
+}
+
+.currencies {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+    margin: 0 20px;
+    li {
+        i {
+            padding: 0px 7px;
+        }
+        span {
+            color: rgb(42, 195, 52);
+            margin: 10px
+        }
+
+    }
+}

@@ -1,0 +1,8 @@
+<header>
+    <h2>Currency Converter</h2>
+    <ul class="currencies">
+        <li *ngFor="let currency of currencies">
+           <i [ngClass]="currency.ccy === 'USD' ? 'fa-solid fa-dollar-sign' : 'fa-solid fa-euro-sign'"></i>{{currency.ccy}}:<span>{{currency.buy.slice(0, 5)}}</span>
+        </li>
+    </ul>
+</header>

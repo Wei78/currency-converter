@@ -1,0 +1,43 @@
+.converter-wrapper {
+    position: relative;
+    width: 600px;
+    height: 260px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius: 2px;
+    box-shadow: 1.5px 1.5px 1.5px 1.2px rgba(0, 0, 0, 0.2);
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        input[type=text] {
+            border: none;
+            border-bottom: 2px solid rgba(208, 208, 208, 0.9);
+            &:focus {
+                outline: none;
+            }
+            font: 100% 'Roboto', sans-serif;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            background-color: rgba(183, 183, 183, 0.2);
+        }
+    }
+
+    .converter-select {
+        height:36px;
+        border:0px;
+        border-bottom: 2px solid rgba(208, 208, 208, 0.9);
+        outline:0px;
+        width: 50px;
+        margin-left: 5px;
+    }
+
+    .converter-box {
+        margin: 0 auto;
+        padding-top: 5%;
+        margin-left: 25%;
+    }
+}
