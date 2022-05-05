@@ -1,7 +1,7 @@
 <div class="converter-wrapper">
     <form class="converter-form" action="test" method="post">
         <div class="converter-box">
-            <input type="text" [value]="currencyTop" (input)="changeTop($event)" placeholder={{optionTop}} />
+            <input type="text" [value]="currencyTop" (input)="currencyBottom = calc($event, optionTop, optionBottom, 'UAH').toFixed(3)" placeholder={{optionTop}} />
             <select class="converter-select" id="selectoption" name="optionTop" [(ngModel)]="optionTop">
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
@@ -9,7 +9,7 @@
             </select>
         </div>
         <div class="converter-box">
-            <input type="text" [value]="currencyBottom" (input)="changeBottom($event)" placeholder={{optionBottom}}/>
+            <input type="text" [value]="currencyBottom" (input)="currencyTop = calc($event, optionBottom, optionTop, 'UAH').toFixed(3)" placeholder={{optionBottom}}/>
             <select class="converter-select" id="selectoption" name="optionBottom" [(ngModel)]="optionBottom">
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>

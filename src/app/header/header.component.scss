@@ -2,10 +2,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2.5px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    background-color: green;
 
     h2 {
-        margin: 20px
+        color: whitesmoke;
+        margin: 30px;
+        font-size: 30px;
     }
 }
 
@@ -17,15 +21,16 @@ header {
     width: 15em;
     align-items: center;
     justify-content: space-between;
-    width: 15%;
-    margin: 0 20px;
+    margin: 0 50px;
+    font-size: 20px;
     li {
         i {
             padding: 0px 7px;
         }
         span {
-            color: rgb(42, 195, 52);
-            margin: 10px
+            color: #000;
+            margin: 10px;
+            font-weight: 600;
         }
 
     }
