@@ -14,7 +14,6 @@ export class ConverterComponent implements OnInit {
   currencyBottom?: any = null;
   optionTop?: any;
   optionBottom?: any;
-  finalValue?: any
 
   constructor(private currencyServices: CurrenciesService) {
     this.currencyServices
@@ -31,7 +30,6 @@ export class ConverterComponent implements OnInit {
   reverseConvert = (value: any, baseValuePerUnit: any) => value * baseValuePerUnit;
 
   calc = (value: any, fromCurrency: any, toCurrecny: any, base: any) => {
-    console.log(this.currencies);
     let details = this.currencies.find(
       (i) => i.base_ccy === fromCurrency && i.ccy === toCurrecny
     );
